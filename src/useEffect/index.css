@@ -1,0 +1,20 @@
+* {
+  text-align: center;
+}
+.drinks-ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+}
+.drinks-ul li img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .drinks-ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
